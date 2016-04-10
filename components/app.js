@@ -11,9 +11,15 @@ import {toMinutes} from './common/filters/ToMinutes.js'
 import {services} from './services/index.js'
 
 var app = angular.module('pomodoro', [
-    'pomodoro.timer',
-    'pomodoro.user',
-    'pomodoro.services',
+	'pomodoro.timer',
+	'pomodoro.user',
+	'pomodoro.services',
 ])
 app.config(routes)
 app.filter('toMinutes', toMinutes)
+
+
+import {checkBrowswerNotifications} from './common/BrowserNotifications.js'
+
+// Check and/or ask for permission
+checkBrowswerNotifications()

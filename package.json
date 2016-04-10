@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.5.3",
     "angular-ui-router": "^0.2.18",
+    "bootstrap-material-design-icons": "^2.2.0",
     "laravel-elixir": "^6.0.0-1",
     "ui-router": "^1.0.0-alpha.3"
   },

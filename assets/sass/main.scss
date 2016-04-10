@@ -1,5 +1,6 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
 header {
     height: 40px;
     width: 100%;
@@ -15,9 +16,8 @@ header #menu {
     padding-top: 50px;
 }
 
-#timer-button {
-    width: 500px;
-    margin: 0 auto;
+svg {
+	cursor: pointer;
 }
 
 footer {

@@ -1,12 +1,11 @@
-<section>
-	<p class="text-center">
+<section id="time">
+	<h1 class="text-center">
 		{{time | toMinutes | date:'HH:mm:ss'}}
-	</p>
+	</h1>
 </section>
 
-
-<div class="text-center" id="timer-button" ng-click="toggleTimer()">
-	<svg height="500" width="500">
+<div class="text-center" id="timer-button">
+	<svg height="400" width="400" ng-click="toggleTimer()">
 		<circle cx="200" cy="200" r="200" stroke="white" stroke-width="1" fill="tomato"/>
 		<text x="200" y="200" fill="white" font-size="40" text-anchor="middle" ng-if="running">Stop</text>
 		<text x="200" y="200" fill="white" font-size="40" text-anchor="middle" ng-if="!running">Start</text>
