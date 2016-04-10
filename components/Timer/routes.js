@@ -1,6 +1,7 @@
 export const routes = ['$stateProvider', ($stateProvider) => {
     $stateProvider.state('timer', {
-        url: '/timer/:userId',
+        // url: '/timer/:userId',
+        url: '/',
         templateUrl: 'views/Timer/timer.tpl.html',
         controller : 'TimerController',
         resolve: {
