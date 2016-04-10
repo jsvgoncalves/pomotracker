@@ -1,1 +1,22 @@
-User Profile
+<div class="profile-header">
+    <h1>User Profile</h1>
+</div>
+
+<section>
+    <p>
+        {{user.name}}
+    </p>
+    <p>
+        {{user.email}}
+    </p>
+</section>
+
+
+<section>
+    <h2>Sessions</h2>
+    <ul>
+        <li ng-repeat="session in sessions">
+            <p>{{session.start}} - {{session.finish}}</p>
+        </li>
+    </ul>
+</section>
