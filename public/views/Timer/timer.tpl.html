@@ -11,3 +11,18 @@
 		<text x="200" y="200" fill="cornsilk" font-size="40" text-anchor="middle" ng-if="!running">Start</text>
 	</svg>
 </div>
+
+<div id="timer-config" class="form-group">
+	<hr />
+	<h2 class="text-left">Configure</h2>
+	<h3 class="text-left">Duration</h3>
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon" id="basic-addon1">{{maxTime | toMinutes | date:'HH:mm:ss'}}</span>
+		<input type="range" class="form-control" placeholder="00:00:00" aria-describedby="basic-addon1" min="0" max="18000" step="10" ng-model="maxTime">
+		<div class="input-group-btn">
+			<button class="btn btn-default" type="button" ng-click="maxTime=300">05:00</button>
+			<button class="btn btn-default" type="button" ng-click="maxTime=1500">25:00</button>
+			<button class="btn btn-default" type="button" ng-click="maxTime=3600">01:00:00</button>
+		</div>
+	</div>
+</div>
