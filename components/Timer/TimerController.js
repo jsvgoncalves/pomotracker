@@ -6,15 +6,16 @@ export const TimerController = [
 	'$scope',
 	'$interval',
 	'$filter',
+	'$stateParams',
 	'PomodoroService',
 	'pomodoroList',
-	function($scope, $interval, $filter, PomodoroService, pomodoroList) {
+	function($scope, $interval, $filter, $stateParams, PomodoroService, pomodoroList) {
 		var timer = null
 		$scope.time = 0
 		$scope.running = false
 		$scope.finished = false
 		// Set from cfg
-		$scope.maxTime = 3
+		$scope.maxTime = $stateParams.time
 		$scope.list = pomodoroList
 
 		console.log($scope.list)
