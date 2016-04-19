@@ -5,7 +5,7 @@ import {prettyDate} from './../common/BrowserNotifications.js'
 
 class TimerController {
 
-	constructor($scope, $interval, $filter, $stateParams, PomodoroService, pomodoroList) {
+	constructor($scope, $interval, $filter, $stateParams, PomodoroService /*pomodoroList*/) {
 		// The $interval
 		var timer = null
 		// Elapsed time
@@ -15,7 +15,7 @@ class TimerController {
 		$scope.finished = false
 		// Set from configs loaded from API
 		$scope.maxTime = $stateParams.time
-		$scope.list = pomodoroList
+		// $scope.list = pomodoroList
 
 		/**
 		 * Updates the timer at each tick
